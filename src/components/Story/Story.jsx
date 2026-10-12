@@ -1,0 +1,3 @@
+import { ArrowRight, MessageCircle } from 'lucide-react';
+import './Story.css';
+export default function Story(){return <section className="story"><div className="story-photo"/><div className="story-overlay"/><div className="container story-inner"><div className="story-copy"><p className="eyebrow">HECHAS PARA COMPARTIR</p><h2 className="brush-title">SABORES<br/>QUE UNEN<span className="underline-mark"/></h2><p>En Pizzería Libre Esquina 4:Al veni vas a encontrar momento para compartir, reír y disfrutar.</p><a className="outline-btn" href="#menu">Conocé nuestra carta <ArrowRight size={17}/></a></div><div className="story-note"><MessageCircle size={18}/><span>La mesa está lista.<br/><strong>Solo faltás vos.</strong></span></div></div></section>}

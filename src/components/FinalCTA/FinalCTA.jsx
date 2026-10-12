@@ -1,0 +1,3 @@
+import { MessageCircle, Pizza } from 'lucide-react';
+import './FinalCTA.css';
+export default function FinalCTA(){return <section className="final-cta" id="contacto"><div className="cta-bg"/><div className="cta-shade"/><div className="container cta-content"><div className="cta-copy"><p className="eyebrow">¿LISTO PARA DISFRUTAR?</p><h2 className="brush-title">TU PRÓXIMA PIZZA<br/><span>TE ESTÁ ESPERANDO</span></h2><a className="btn btn-yellow" href="https://wa.me/5491112345678" target="_blank" rel="noreferrer"><MessageCircle size={18}/> Hacé tu consulta</a></div><div className="cta-brand"><img src="/images/logo.png" alt="Logo Pizzería Libre" /><p>PIZZERÍA LIBRE<strong>4 ESQUINAS L</strong></p></div></div></section>}

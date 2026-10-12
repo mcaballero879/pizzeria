@@ -1,0 +1,3 @@
+import { ArrowRight, MessageCircle } from 'lucide-react';
+import './Hero.css';
+export default function Hero(){return <section className="hero" id="inicio"><div className="hero-image"/><div className="hero-shade"/><div className="container hero-content"><p className="hero-script">La mejor pizza,</p><h1><span>EN BUENA</span><br/>COMPAÑÍA</h1><p className="hero-copy">Pizzas libre, sabores únicos<br className="desktop-break"/> y un ambiente que se disfruta.</p><a className="btn btn-yellow" href="https://wa.me/5491112345678" target="_blank" rel="noreferrer">¡Vení a vivir la experiencia! <ArrowRight size={19}/></a></div><div className="hero-bottom"><span>PIZZA LIBRE</span><i/><span>BUENOS MOMENTOS</span><i/><span>MUCHO SABOR</span></div></section>}

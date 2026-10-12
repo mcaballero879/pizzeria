@@ -1,0 +1,112 @@
+.footer {
+  background: #050606;
+  padding: 28px 0 18px;
+  border-top: 1px solid #ffffff12;
+}
+
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding-bottom: 24px;
+}
+
+/* === ESTILOS PARA EL LOGO === */
+.footer-logo {
+  width: 140px; /* Cambia este valor para ajustar el tamaño en escritorio */
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen sin deformarla */
+  display: block;
+}
+
+.footer-brand {
+  font-size: .8rem;
+}
+
+.footer-brand .brand-mark img {
+  width: 50px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-nav a {
+  font-size: .7rem;
+  color: #c7c5c0;
+}
+
+.footer-nav a:hover {
+  color: var(--yellow);
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  color: var(--yellow);
+}
+
+.footer-social a {
+  display: grid;
+  place-items: center;
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ffffff14;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #85837e;
+  font-size: .62rem;
+}
+
+.footer-bottom b {
+  color: var(--yellow);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 720px) {
+  .footer-main {
+    flex-wrap: wrap;
+  }
+  
+  /* Ajuste del logo para pantallas medianas / móviles */
+  .footer-logo {
+    width: 110px; /* Tamaño del logo en móviles/tablets */
+  }
+
+  .footer-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    line-height: 1.5;
+  }
+
+  .footer-bottom span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Ajuste del logo para pantallas muy pequeñas */
+  .footer-logo {
+    width: 90px; /* Tamaño del logo en móviles pequeños */
+  }
+
+  .footer-nav a {
+    font-size: .64rem;
+  }
+}

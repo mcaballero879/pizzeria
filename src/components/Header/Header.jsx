@@ -1,0 +1,5 @@
+import { useState } from 'react';
+import { Menu, X, Pizza, MessageCircle } from 'lucide-react';
+import './Header.css';
+const links=[['Inicio','#inicio'],['Nosotros','#nosotros'],['Sucursales','#sucursales'],['Redes','#redes'],['Contacto','#contacto']];
+export default function Header(){const [open,setOpen]=useState(false);return <header className="site-header"><div className="header-inner container"><a className="brand" href="#inicio" aria-label="Pizzería Libre, inicio"><span className="brand-mark"><img src="/images/logo.png" alt="Logo de Pizzería Libre" /></span><span>PIZZERÍA LIBRE<small>4 ESQUINAS</small></span></a><button className="mobile-toggle" onClick={()=>setOpen(!open)} aria-label={open?'Cerrar menú':'Abrir menú'}>{open?<X/>:<Menu/>}</button><nav className={open?'main-nav is-open':'main-nav'}>{links.map(([label,url])=><a key={url} href={url} onClick={()=>setOpen(false)}>{label}</a>)}</nav><a className="header-order" href="https://wa.me/5491112345678" target="_blank" rel="noreferrer"><MessageCircle size={16}/> ¡Hacé tu consulta!</a></div></header>}
